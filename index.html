@@ -2,20 +2,26 @@
 <html>
 <head>
 	<meta charset="UFT-8">
-	<title>Tic Tac Toe</title>
+	<title>AunderwinceTicTacToe</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="A simple tic tac toe game.">
+	<meta name="theme-color" content="#2980b9" />
 
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+
 
 	<style>
 
 		html {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Ubuntu', sans-serif;
 			font-weight: 400;
 			font-size: 14px;
+            color: white;
 		}
 
 		.container {
@@ -35,33 +41,14 @@
 			font-weight: 700;
 		}
 
-		span.red {
-			color: red;
+		span.purple {
+			color: purple;
 			font-weight: 700;
 		}
 
-		span.blue {
-			color: blue;
+		span.black {
+			color: black;
 			font-weight: 700;
-		}
-
-		span.pink {
-			color: pink;
-		}
-
-		.button {
-			width: 90px;
-			height: 15px;
-			border-radius: 5px;
-			padding: 5px;
-			margin: 0 auto;
-
-			cursor: pointer;
-			text-align: center;
-
-			background-color: pink;
-			font-size: 13px;
-			color: #fff;
 		}
 
 		.tic-tac-toe {
@@ -90,16 +77,16 @@
 		}
 
 		.free {
-			background-color: #999;
+			background-color: #fff;
 		}
 
 
 		.O-play {
-			background-color: blue;
+			background-color: black;
 		}
 
 		.X-play {
-			background-color: red;
+			background-color: purple;
 		}
 	</style>
 </head>
@@ -108,15 +95,13 @@
 
 	<div class="container">
 
-		<h1>Tic Tac Toe</h1>
+		<h1>Aunderwince<br>TicTacToe</h1>
 
 		<p>A simple game of tic tac toe to play<br/>
-			You play as <span class="red">X</span> and the computer plays as <span class="blue">O</span><br/>
+			You play as <span class="purple">X</span> and the computer plays as <span class="black">O</span><br/>
 			Start by choosing a square to play</p>
 
-
-		<div class="button" id="reset-button">Reset Board</div>
-
+		<p>X | O</p>
 	</div>
 
 	<div class="tic-tac-toe">
@@ -130,9 +115,5 @@
 		<div id="square8" class="tile free"></div>
 		<div id="square9" class="tile free"></div>
 	</div>
-
-	<footer style="font-size: 15px" class="container">Made for Ann Wachiya with <span class="red">&#9829</span> from Kelvin Kamau<footer>
-
-
 </body>
 </html>

@@ -10,6 +10,8 @@ var sq7 = $('#square7');
 var sq8 = $('#square8');
 var sq9 = $('#square9');
 
+var scorex = 0;
+var scoreo = 0;
 var playValid = false;
 var win = false;
 
@@ -36,9 +38,12 @@ function winAlert(player) {
 	win = true;
 
 	if (player == "X") {
-		alert("Congratulations Ann, you beat the computer!")
+		scorex ++;
+		alert("Congratulations, you beat the computer! Your score is " + scorex)
 	} else {
-		alert("You lost!")
+		scoreo ++;
+		alert("You lost! Computer score is " + scoreo)
+
 	}
 	clearBoard();
 }

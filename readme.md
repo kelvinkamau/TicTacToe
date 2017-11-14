@@ -1,5 +1,5 @@
 # Aunderwince TicTacToe
-## Version 1.0.0
+##### Version 1.0.0
 
 
 This is a simple game of tic tac toe that I created to test my  javascript/jquery skills.

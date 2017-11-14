@@ -8,7 +8,7 @@ Most of the games I have seen online require two players, and I wanted to try cr
 #### I'm calling on contributors to improve the game in a few ways:
 
 * Make the computer (playing as O) smarter. At the moment the computer randomly chooses a square to play, not trying to get a win.
-* Add a win counter
+* Add a score counter & win animation
 * Allow the human to choose whether to play as X or O
 * Have the computer make funny remarks with each play / win 🌲 🍹
 

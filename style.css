@@ -11,6 +11,7 @@ body{
     -o-animation: 10s linear 0s normal none infinite animate;
     animation: 10s linear 0s normal none infinite animate;
     }
+
     @-webkit-keyframes animate {
     from {background-position:0 0;}
     to {background-position: 500px 0;}

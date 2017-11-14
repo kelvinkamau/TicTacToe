@@ -106,13 +106,14 @@ function checkDraw() {
 		clearBoard();
 	}
 }
-
+//todo add new file
 
 
 
 function Oplay() {
 
 	// Function for when O plays tactically
+	// todo add new service workers
 	function Oplaying(square) {
 
 		validatePlay(square)

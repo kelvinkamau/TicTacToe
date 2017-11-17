@@ -1,11 +1,12 @@
-
 var cacheName = 'v1';
 var cacheFiles = [
     './',
-    'index.html',
-    'app.js',
-    'script.css',
-    'style.css'
+    './index.html',
+    './app.js',
+    './script.css',
+    './style.css',
+    './http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+    './http://fonts.googleapis.com/css?family=Ubuntu:400,700'
 ]
 
 self.addEventListener('install', function(e) {
@@ -20,10 +21,9 @@ self.addEventListener('install', function(e) {
     );
 });
 
-
 self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activated');
-
+    
     e.waitUntil(
 
         caches.keys().then(function(cacheNames) {
@@ -54,7 +54,7 @@ self.addEventListener('fetch', function(e) {
                     .then(function(response) {
 
                         if ( !response ) {
-                            console.log("[ServiceWorker] No response from fetch ")
+                            console.log("[ServiceWorker] No response from fetch request")
                             return response;
                         }
                         var responseClone = response.clone();
@@ -72,4 +72,4 @@ self.addEventListener('fetch', function(e) {
                     });
             })
     );
-});
+})

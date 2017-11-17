@@ -5,33 +5,23 @@ var cacheFiles = [
     './style.css',
     './index.html',
     './script.js',
+    './http://fonts.googleapis.com/css?family=Ubuntu:400,700',
+    './http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
 ]
 
 self.addEventListener('install', function (e) {
     console.log("[ServiceWorker] Installed")
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            console.log("[ServiceWorker] Caching cacheFiles")
-return cache.addAll(cacheFiles);
+            console.log("[ServiceWorker] Caching cacheFiles");
+            return cache.addAll(cacheFiles);
         })
     )
 })
-
 self.addEventListener('activate', function (e) {
-    console.log("[ServiceWorker] Activated")
-    e.waitUntil(
-        caches.keys().then(function (cacheNames) {
-            return Promise.all(cacheNames.nap(function (thisCacheName) {
-                if (thisCacheName !== cacheName){
-                    console.log("[ServiceWorker] Removing Cached Files from" , thisCacheName);
-                        return caches.delete(thisCacheName);
-                }
-
-            }))
-        })
-    )
+    console.log("[ServiceWorker] Activate")
 })
 
 self.addEventListener('fetch', function (e) {
-    console.log("[ServiceWorker] Fetching", e.request.url);
+console.log("[ServiceWorker] Fetching", e.request.url);
 })

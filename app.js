@@ -1,9 +1,9 @@
 /**
  * Created by Boneless on 16-Nov-17.
  */
-if ('service-worker' in navigator) {
+if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('./service-worker.js', {scope: './'})
+        .register('service-worker.js', {scope: './'})
         .then(function (registration) {
             console.log("Service Worker Registered", registration)
         })

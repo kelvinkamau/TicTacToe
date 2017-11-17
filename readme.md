@@ -1,4 +1,4 @@
-# Aunderwince TicTacToe
+# Aunderwince TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
 

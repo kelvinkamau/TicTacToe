@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 var sq1 = $('#square1');
 var sq2 = $('#square2');
@@ -293,6 +293,4 @@ $('.tile').on('click', function Xplay() {
 $('#reset-button').on('click', function() {
 	clearBoard();
 })
-
-
-}); // end document ready
+})

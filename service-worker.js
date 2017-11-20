@@ -1,12 +1,13 @@
 var cacheName = 'v1';
 var cacheFiles = [
-    './',
+   './',
     './index.html',
     './app.js',
     './script.css',
     './style.css',
     './http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
-    './http://fonts.googleapis.com/css?family=Ubuntu:400,700'
+    './http://fonts.googleapis.com/css?family=Ubuntu:400,700',
+    'service-worker.js'
 ]
 
 self.addEventListener('install', function(e) {

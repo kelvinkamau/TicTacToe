@@ -1,6 +1,7 @@
 # Aunderwince TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
+Play it here [Aunderwince TicTacToe](https://kelvinkamau.github.io)
 
 This is a simple game of tic tac toe that I created to test my  javascript/jquery skills.
 Most of the games I have seen online require two players, and I wanted to try creating a game where one player plays against the computer.

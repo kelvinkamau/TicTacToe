@@ -3,7 +3,7 @@
 
 Play it here [Aunderwince TicTacToe](https://kelvinkamau.github.io)
 
-<a href="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="AunderwinceTicTacToe" src="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="288" height="512"/></a>
+<a href="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="AunderwinceTicTacToe" src="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>
 
 This is a simple game of tic tac toe that I created to test my  javascript/jquery skills.
 Most of the games I have seen online require two players, and I wanted to try creating a game where one player plays against the computer.

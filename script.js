@@ -186,7 +186,7 @@ function Oplay() {
 
 
 
-	// Win 1 2 3
+	//Win 1 2 3
 	if ( win123_sq3 ) {
 		Oplaying(sq3)
 	} else if ( win123_sq2 ) {
@@ -195,7 +195,7 @@ function Oplay() {
 		Oplaying(sq1)
 	} 
 	
-	// Win 4 5 6
+	//Win 4 5 6
 	else if ( win456_sq6 ) {
 		Oplaying(sq6)
 	} else if ( win456_sq5 ) {
@@ -204,7 +204,7 @@ function Oplay() {
 		Oplaying(sq4)
 	} 
 
-	// Win 7 8 9 
+	//Win 7 8 9 
 	else if ( win789_sq9 ) {
 		Oplaying(sq9)
 	} else if ( win789_sq8 ) {
@@ -213,7 +213,7 @@ function Oplay() {
 		Oplaying(sq7)
 	}
 
-	// Win 1 4 7
+	//Win 1 4 7
 	else if ( win147_sq7 ) {
 		Oplaying(sq7)
 	} else if ( win147_sq4 ) {
@@ -222,7 +222,7 @@ function Oplay() {
 		Oplaying(sq1)
 	}
 
-	// Win 5 2 8
+	//Win 5 2 8
 	else if ( win528_sq8 ) {
 		Oplaying(sq8)
 	} else if ( win528_sq2 ) {
@@ -231,7 +231,7 @@ function Oplay() {
 		Oplaying(sq5)
 	} 
 
-	// Win 6 9 3
+	//Win 6 9 3
 	else if ( win693_sq3 ) {
 		Oplaying(sq3)
 	} else if ( win693_sq9 ) {
@@ -240,7 +240,7 @@ function Oplay() {
 		Oplaying(sq6)
 	}
 
-	// Win 1 5 9
+	//Win 1 5 9
 	else if ( win159_sq9 ) {
 		Oplaying(sq9)
 	} else if ( win159_sq5 ) {
@@ -249,7 +249,7 @@ function Oplay() {
 		Oplaying(sq1)
 	} 
 
-	// Win 5 7 3
+	//Win 5 7 3
 	else if ( win573_sq3 ) {
 		Oplaying(sq3)
 	} else if ( win573_sq7 ) {

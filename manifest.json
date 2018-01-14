@@ -2,12 +2,8 @@
  "background_color": "#fff",
  "display": "standalone",
  "theme_color": "#fff",
-   "start_url": "/?homescreen=1",
-  "scope": "/",
-  "display": "standalone",
-  "background_color": "#2196F3",
-  "theme_color": "#2196F3"
-    
+ "scope": "/",
+ 
   "short_name": "TicTacToe",
   "name": "Aunderwince TicTacToe",
  "description": " A fun JS game of tic tac toe in progressive web app.",

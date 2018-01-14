@@ -1,7 +1,8 @@
 # Aunderwince TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
-Play it here [Aunderwince TicTacToe](https://kelvinkamau.github.io)
+Play it here [Aunderwince TicTacToe](https://kelvinkamau.me/tictactoe)
+Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/AunderwinceTicTacToe)
 
 <a href="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="AunderwinceTicTacToe" src="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>
 

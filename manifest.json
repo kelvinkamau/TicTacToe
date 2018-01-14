@@ -5,6 +5,7 @@
     
   "short_name": "TicTacToe",
   "name": "Aunderwince TicTacToe",
+ "description": " A fun JS game of tic tac toe in progressive web app.",
   "icons": [
     {
       "src": "images/ttc.png",

@@ -16,6 +16,6 @@ Most of the games I have seen online require two players, and I wanted to try cr
 * Allow the human to choose whether to play as X or O
 * Have the computer make funny remarks with each play / win 🌲 🍹
 
-Made with ❤️ by [Kelvin Kamau](https://github.com/kelvinkamau)
+Made with ❤️ by [Kelvin Kamau](http://kelvinkamau.me)
 
 

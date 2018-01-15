@@ -1,7 +1,7 @@
 {
- "background_color": "#fff",
+ "background_color": "#1474B3",
  "display": "standalone",
- "theme_color": "#fff",
+ "theme_color": "#1474B3",
  "scope": "/",
  
   "short_name": "TicTacToe",
@@ -25,7 +25,7 @@
     }
     ,
     {
-      "src": "images/pwafire512.png",
+      "src": "images/ttc.png",
       "type": "image/png",
       "sizes": "512x512"
     } 

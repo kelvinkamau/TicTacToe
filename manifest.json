@@ -3,6 +3,7 @@
  "background_color": "#1474B3",
  "display": "standalone",
  "theme_color": "#1474B3",
+ "orientation": "portrait"
  "scope": "/",
  
   "short_name": "TicTacToe",

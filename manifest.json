@@ -1,4 +1,5 @@
 {
+ "manifest_version": 2,
  "background_color": "#1474B3",
  "display": "standalone",
  "theme_color": "#1474B3",
@@ -6,7 +7,8 @@
  
   "short_name": "TicTacToe",
   "name": "Aunderwince TicTacToe",
- "description": " A fun JS game of tic tac toe in progressive web app.",
+  "default_locale": "en",
+  "description": " A fun JS game of tic-tac-toe in Progressive Web App.",
   "icons": [
     {
       "src": "images/ttc.png",

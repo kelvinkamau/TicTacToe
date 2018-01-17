@@ -12,6 +12,8 @@ Most of the games I have seen online require two players and I wanted to try cre
 #### I'm calling on contributors to improve the game in a few ways:
 
 * Allow the human to choose whether to play as X or O
+* Add an optional signup/login with FirebaseAuth & a leaderboard where various players can get ranked.
+* Add SSL to secure with HTTPS
 * Make the computer (playing as O) intelligent. At the moment the computer randomly chooses a square to play, not trying to get a win.
 * Add a score counter & win animation
 * Have the computer make funny remarks with each play / win 🌲 🍹

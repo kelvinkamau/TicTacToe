@@ -1,6 +1,9 @@
 # Aunderwince TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/AunderwinceTicTacToe/maintainability)
+
+
 * Play it here [Aunderwince TicTacToe](http://kelvinkamau.me/AunderwinceTicTacToe/)
 * Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/AunderwinceTicTacToe)
 

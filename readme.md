@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/AunderwinceTicTacToe/maintainability)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/test_coverage)](https://codeclimate.com/github/kelvinkamau/AunderwinceTicTacToe/test_coverage)
+
 
 * Play it here [Aunderwince TicTacToe](http://kelvinkamau.me/AunderwinceTicTacToe/)
 * Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/AunderwinceTicTacToe)

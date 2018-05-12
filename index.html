@@ -121,5 +121,15 @@
 		<div id="square9" class="tile free"></div>
 	</div>
 	<script type="text/javascript" src="app.js"></script>
+						    <script>
+       if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() 
+	              {
+                       navigator.serviceWorker.register('/sw.js')
+                          .then(function() { console.log("Service Worker Registered"); });
+                       }
+                          );
+                              }
+	                          </script>
 </body>
 </html>

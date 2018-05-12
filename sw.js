@@ -27,7 +27,7 @@ self.addEventListener('fetch', function(event) {
     './IMG-20171204-WA0019.jpg',
     './http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
     './http://fonts.googleapis.com/css?family=Ubuntu:400,700',
-    './images/ttc.png/,
+    './images/ttc.png/',
     '/sw.js/'
        
        

@@ -28,7 +28,8 @@ self.addEventListener('fetch', function(event) {
                             'https://fonts.googleapis.com/css?family=Ubuntu:400,700',
                             'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
                             '/manifest.json',
-                            '/sw.js'
+                            '/sw.js',
+                            'https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png'
                         ]);
                     })
                 );

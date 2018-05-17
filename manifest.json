@@ -1,14 +1,10 @@
 {
- "background_color": "#1474B3",
- "display": "standalone",
- "theme_color": "#1474B3",
- "orientation": "portrait",
- "scope": "/",
- 
+  "background_color": "#fff",
+  "display": "standalone",
+  "theme_color": "#fff",
+
   "short_name": "TicTacToe",
   "name": "Aunderwince TicTacToe",
-  "default_locale": "en",
-  "description": " A fun JS game of tic-tac-toe in Progressive Web App.",
   "icons": [
     {
       "src": "images/ttc.png",
@@ -18,20 +14,38 @@
     {
       "src": "images/ttc.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "72x72"
     },
     {
       "src": "images/ttc.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "96x96"
     }
-    ,
+  ,
     {
       "src": "images/ttc.png",
       "type": "image/png",
-      "sizes": "512x512"
-    } 
+      "sizes": "144x144"
+    }
+  ,
+    {
+      "src": "images/ttc.png",
+      "type": "image/png",
+      "sizes": "168x168"
+    }
+  ,
+    {
+      "src": "images/ttc.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    }
+  ,
+    {
+      "src": "images/ttc.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+
   ],
-    
   "start_url": "index.html?launcher=true"
 }

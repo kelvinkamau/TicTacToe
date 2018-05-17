@@ -13,28 +13,26 @@ self.addEventListener('fetch', function(event) {
             }, function (e) {
                 // rejected promise - just ignore it, we're offline
                 console.log("Error in fetch()", e);
-                
-                 e.waitUntil(
-    caches.open('cache').then(function(cache) {
-      return cache.addAll([
-    '/',
-        '/index.html',
-        '/index.html?homescreen=1',
-       '/?homescreen=1',
-    './script.css',
-    './style.css',
-    './manifest.json',
-    './http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
-    './http://fonts.googleapis.com/css?family=Ubuntu:400,700',
-    './images/ttc.png/',
-    '/sw.js/'
-       
-       
-        
-      ]);
-    })
-  );
-               
+
+                e.waitUntil(
+                    caches.open('cache').then(function(cache) {
+                        return cache.addAll([
+                            '/',
+
+                            '/index.html',
+                            '/index.html?homescreen=1',
+                            '/?homescreen=1',
+                            '/script.js',
+                            '/style.css',
+                            '/images/ttc.png',
+                            'https://fonts.googleapis.com/css?family=Ubuntu:400,700',
+                            'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+                            '/manifest.json',
+                            '/sw.js'
+                        ]);
+                    })
+                );
+
             });
 
             // respond from the cache, or the network

@@ -1,134 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UFT-8">
-	<title id="title">AunderwinceTicTacToe</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="A simple tic tac toe game.">
-	<meta name="theme-color" content="#2980b9" />
-	<meta name="author" content="Kelvin Kamau"/>
-	<meta name="keywords" content="tic tac toe, kelvin kamau, aunderwince, anne wachiya, game, kenya game developer, progressive web app"/>
-	<link rel="canonical" href="https://www.kelvinkamau.app/AunderwinceTicTacToe/"/>
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">															     <link rel="icon" href="images/ttc.png" type="image/png" />
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet'>
-	<link rel="manifest" href="manifest.json">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css"  href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-        
+    <meta charset="UFT-8">
+    <title id="title">AunderwinceTicTacToe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A simple tic tac toe game.">
+    <meta name="theme-color" content="#2980b9"/>
+    <meta name="author" content="Kelvin Kamau"/>
+    <meta name="keywords"
+          content="tic tac toe, kelvin kamau, aunderwince, anne wachiya, game, kenya game developer, progressive web app"/>
+    <link rel="canonical" href="https://www.kelvinkamau.app/AunderwinceTicTacToe/"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="images/ttc.png" type="image/png"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet'>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 
 
-	<style>
-		html {
-			font-family: 'Ubuntu', sans-serif;
-			font-weight: 400;
-			font-size: 14px;
+    <style>
+        html {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
             color: white;
-		}
+        }
 
-		.container {
-			max-width: 400px;
-			margin: 2em auto;
-			text-align: center;
-			line-height: 1.5;
-		}
+        .container {
+            max-width: 400px;
+            margin: 2em auto;
+            text-align: center;
+            line-height: 1.5;
+        }
 
-		h1 {
-			margin: 1em auto;
-		}
+        h1 {
+            margin: 1em auto;
+        }
 
-		a {
-			text-decoration: none;
-			color: pink;
-			font-weight: 700;
-		}
+        a {
+            text-decoration: none;
+            color: pink;
+            font-weight: 700;
+        }
 
-		span.purple {
-			color: purple;
-			font-weight: 700;
-		}
+        span.purple {
+            color: purple;
+            font-weight: 700;
+        }
 
-		span.black {
-			color: black;
-			font-weight: 700;
-		}
+        span.black {
+            color: black;
+            font-weight: 700;
+        }
 
-		.tic-tac-toe {
-			width: 315px;
-			height: auto;
-			margin: 0 auto;
+        .tic-tac-toe {
+            width: 315px;
+            height: auto;
+            margin: 0 auto;
 
-		}
+        }
 
-		.tile {
-			height: 100px;
-			width: 100px;
-			display: inline-block;
-			cursor: pointer;
+        .tile {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            cursor: pointer;
 
-			position: relative;
-			vertical-align: top;
+            position: relative;
+            vertical-align: top;
 
-			padding: 15px;
-			margin-bottom: 5px;
-			box-sizing: border-box;
+            padding: 15px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
 
-			color: #fff;
-			font-size: 60px;
-			text-align: center;
-		}
+            color: #fff;
+            font-size: 60px;
+            text-align: center;
+        }
 
-		.free {
-			background-color: #fff;
-		}
+        .free {
+            background-color: #fff;
+        }
 
+        .O-play {
+            background-color: black;
+        }
 
-		.O-play {
-			background-color: black;
-		}
-
-		.X-play {
-			background-color: purple;
-		}
-	</style>
+        .X-play {
+            background-color: purple;
+        }
+    </style>
 </head>
 <body>
 
 
-	<div class="container">
+<div class="container">
 
-		<h1>Aunderwince<br>TicTacToe</h1>
+    <h1>Aunderwince<br>TicTacToe</h1>
 
-		<p>A simple game of tic tac toe to play<br/>
-			You play as <span class="purple">X</span> and the computer plays as <span class="black">O</span><br/>
-			Start by choosing a square to play</p>
+    <p>A simple game of tic tac toe to play<br/>
+        You play as <span class="purple">X</span> and the computer plays as <span class="black">O</span><br/>
+        Start by choosing a square to play</p>
 
-		<p>X | O</p>
-	</div>
+    <p>X | O</p>
+</div>
 
-	<div class="tic-tac-toe">
-		<div id="square1" class="tile free"></div>
-		<div id="square2" class="tile free"></div>
-		<div id="square3" class="tile free"></div>
-		<div id="square4" class="tile free"></div>
-		<div id="square5" class="tile free"></div>
-		<div id="square6" class="tile free"></div>
-		<div id="square7" class="tile free"></div>
-		<div id="square8" class="tile free"></div>
-		<div id="square9" class="tile free"></div>
-	</div>
-	<script type="text/javascript" src="app.js"></script>
-						    <script>
-       if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() 
-	              {
-                       navigator.serviceWorker.register('/sw.js')
-                          .then(function() { console.log("Service Worker Registered"); });
-                       }
-                          );
-                              }
-	                          </script>
+<div class="tic-tac-toe">
+    <div id="square1" class="tile free"></div>
+    <div id="square2" class="tile free"></div>
+    <div id="square3" class="tile free"></div>
+    <div id="square4" class="tile free"></div>
+    <div id="square5" class="tile free"></div>
+    <div id="square6" class="tile free"></div>
+    <div id="square7" class="tile free"></div>
+    <div id="square8" class="tile free"></div>
+    <div id="square9" class="tile free"></div>
+</div>
+<script>
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function () {
+                        console.log("Service Worker Registered");
+                    });
+            }
+        );
+    }
+</script>
 </body>
 </html>

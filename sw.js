@@ -19,16 +19,16 @@ self.addEventListener('fetch', function(event) {
                         return cache.addAll([
                             '/',
 
-                            '/index.html',
-                            '/index.html?homescreen=1',
+                            'AunderwinceTicTacToe/index.html',
+                            'AunderwinceTicTacToe/index.html?homescreen=1',
                             '/?homescreen=1',
-                            '/script.js',
-                            '/style.css',
-                            '/images/ttc.png',
+                            'AunderwinceTicTacToe/script.js',
+                            'AunderwinceTicTacToe/style.css',
+                            'AunderwinceTicTacToe/images/ttc.png',
                             'https://fonts.googleapis.com/css?family=Ubuntu:400,700',
                             'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
-                            '/manifest.json',
-                            '/sw.js',
+                            'AunderwinceTicTacToe/manifest.json',
+                            'AunderwinceTicTacToe/sw.js',
                             'https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png'
                         ]);
                     })

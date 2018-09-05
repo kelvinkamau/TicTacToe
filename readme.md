@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/AunderwinceTicTacToe/maintainability) 
 
 
-* Play it here [Aunderwince TicTacToe](http://kelvinkamau.me/AunderwinceTicTacToe/)
+* Play it here [Aunderwince TicTacToe](https://www.kelvinkamau.app/AunderwinceTicTacToe/)
 * Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/AunderwinceTicTacToe)
 
 <a href="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="AunderwinceTicTacToe" src="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>

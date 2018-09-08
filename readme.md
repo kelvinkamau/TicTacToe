@@ -1,13 +1,13 @@
-# Aunderwince TicTacToe Progressive Web App
+# TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/AunderwinceTicTacToe/maintainability) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/TicTacToe/maintainability) 
 
 
-* Play it here [Aunderwince TicTacToe](https://www.kelvinkamau.app/AunderwinceTicTacToe/)
-* Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/AunderwinceTicTacToe)
+* Play it here [TicTacToe](https://www.kelvinkamau.app/TicTacToe/)
+* Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/TicTacToe)
 
-<a href="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="AunderwinceTicTacToe" src="https://github.com/kelvinkamau/AunderwinceTicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>
+<a href="https://github.com/kelvinkamau/TicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="TicTacToe" src="https://github.com/kelvinkamau/TicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>
 
 This is a simple game of tic tac toe that I created to refresh my javascript/jquery skills.
 Most of the games I have seen online require two players and I wanted to try creating a game where one player plays against the "computer".

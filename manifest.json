@@ -4,7 +4,7 @@
   "theme_color": "#fff",
 
   "short_name": "TicTacToe",
-  "name": "Aunderwince TicTacToe",
+  "name": "TicTacToe",
   "icons": [
     {
       "src": "images/ttc.png",

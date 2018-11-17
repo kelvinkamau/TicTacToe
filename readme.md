@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/TicTacToe/maintainability) 
 
 
-* Play it here [TicTacToe](https://www.kelvinkamau.app/TicTacToe/)
+* Play it here [TicTacToe](https://kelvinkamau.github.io/tictactoe/)
 * Contributions can be made at [AiKenya On GitHub](https://github.com/AiKenya/TicTacToe)
 
 <a href="https://github.com/kelvinkamau/TicTacToe/blob/master/IMG-20171204-WA0019.jpg"><img alt="TicTacToe" src="https://github.com/kelvinkamau/TicTacToe/blob/master/IMG-20171204-WA0019.jpg" width="192" height="341"/></a>
@@ -21,6 +21,6 @@ Most of the games I have seen online require two players and I wanted to try cre
 * Add a score counter & win animation
 * Have the computer make funny remarks with each play / win 🌲 🍹
 
-Made with ❤️ by [Kelvin Kamau](https://www.kelvinkamau.app)
+Made with ❤️ by [Kelvin Kamau](https://kelvinkamau.github.io/tictactoe/)
 
 

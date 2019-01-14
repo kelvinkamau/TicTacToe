@@ -1,7 +1,8 @@
 # TicTacToe Progressive Web App
 ##### _Version 1.0.0_
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/TicTacToe/maintainability) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/9fab1b9689fb3d534758/maintainability)](https://codeclimate.com/github/kelvinkamau/TicTacToe/maintainability) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkelvinkamau%2Ftictactoe.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkelvinkamau%2Ftictactoe?ref=badge_shield)
+
 
 
 * Play it here [TicTacToe](https://kelvinkamau.github.io/tictactoe/)
@@ -24,3 +25,7 @@ Most of the games I have seen online require two players and I wanted to try cre
 Made with ❤️ by [Kelvin Kamau](https://kelvinkamau.github.io/tictactoe/)
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkelvinkamau%2Ftictactoe.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkelvinkamau%2Ftictactoe?ref=badge_large)

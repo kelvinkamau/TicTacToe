@@ -1,9 +1,11 @@
-self.addEventListener('fetch', function(event) {
-    event.respondWith(caches.open('cache').then(function(cache) {
-        return cache.match(event.request).then(function(response) {
+var consoleMessages = ["Hey hey there buddy! :)", "👀 I 👀 see 👀 you 👀", "Hope you're having a great day 😊", "How do you comfort a JavaScript bug? You console it 😎"],
+    consoleMessage = consoleMessages[Math.floor(Math.random() * consoleMessages.length)];
+console.log(consoleMessage);
+self.addEventListener('fetch', function (event) {
+    event.respondWith(caches.open('cache').then(function (cache) {
+        return cache.match(event.request).then(function (response) {
             console.log("cache request: " + event.request.url);
-            var fetchPromise = fetch(event.request).then(function(networkResponse) {
-                // if we got a response from the cache, update the cache
+            var fetchPromise = fetch(event.request).then(function (networkResponse) {
                 console.log("fetch completed: " + event.request.url, networkResponse);
                 if (networkResponse) {
                     console.debug("updated cached page: " + event.request.url, networkResponse);
@@ -11,11 +13,10 @@ self.addEventListener('fetch', function(event) {
                 }
                 return networkResponse;
             }, function (e) {
-                // rejected promise - just ignore it, we're offline
                 console.log("Error in fetch()", e);
 
                 e.waitUntil(
-                    caches.open('cache').then(function(cache) {
+                    caches.open('cache').then(function (cache) {
                         return cache.addAll([
                             '/',
 
@@ -33,10 +34,7 @@ self.addEventListener('fetch', function(event) {
                         ]);
                     })
                 );
-
             });
-
-            // respond from the cache, or the network
             return response || fetchPromise;
         });
     }));

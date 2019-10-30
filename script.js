@@ -16,7 +16,6 @@ var playValid = false;
 var win = false;
 
 
-
 function validatePlay(squareplayed) {
 	if ( $(squareplayed).hasClass('free') ) {
 		playValid = true;
@@ -39,15 +38,19 @@ function winAlert(player) {
 
 	if (player == "X") {
 		scorex ++;
-		alert("Congratulations, you beat the computer! Your score is " + scorex)
+		alert("Yay, you beat the computer! Your score is " + scorex + " Computer score is " + scoreo)
 	} else {
 		scoreo ++;
-		alert("You lost! Computer score is " + scoreo)
+		alert("You lost! Computer score is " + scoreo + " Your score is " + scorex)
 
 	}
 	clearBoard();
 }
 
+function reset() {
+	clearBoard();
+
+}
 function checkWin() {
 
 	if ( sq1.hasClass('X-play') && sq2.hasClass('X-play') && sq3.hasClass('X-play') ) {
@@ -106,9 +109,7 @@ function checkDraw() {
 		clearBoard();
 	}
 }
-//todo add new file
-
-
+//todo reset game
 
 function Oplay() {
 

@@ -1,4 +1,4 @@
-var consoleMessages = ["Hey hey there buddy! :)", "👀 I 👀 see 👀 you 👀", "Hope you're having a great day 😊", "How do you comfort a JavaScript bug? You console it 😎"],
+var consoleMessages = ["Hey hey there buddy! :)", "Hope you're having a great day 😊", "How do you comfort a JavaScript bug? You console it 😎"],
     consoleMessage = consoleMessages[Math.floor(Math.random() * consoleMessages.length)];
 console.log(consoleMessage);
 self.addEventListener('fetch', function (event) {

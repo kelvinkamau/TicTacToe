@@ -21,78 +21,7 @@
     <script type="text/javascript" src="script.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-    <style>
-        html {
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            color: white;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 2em auto;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        h1 {
-            margin: 1em auto;
-        }
-
-        a {
-            text-decoration: none;
-            color: pink;
-            font-weight: 700;
-        }
-
-        span.purple {
-            color: purple;
-            font-weight: 700;
-        }
-
-        span.black {
-            color: black;
-            font-weight: 700;
-        }
-
-        .tic-tac-toe {
-            width: 315px;
-            height: auto;
-            margin: 0 auto;
-
-        }
-
-        .tile {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            cursor: pointer;
-
-            position: relative;
-            vertical-align: top;
-
-            padding: 15px;
-            margin-bottom: 5px;
-            box-sizing: border-box;
-
-            color: #fff;
-            font-size: 60px;
-            text-align: center;
-        }
-
-        .free {
-            background-color: #fff;
-        }
-
-        .O-play {
-            background-color: black;
-        }
-
-        .X-play {
-            background-color: purple;
-        }
-    </style>
+    
 </head>
 <body>
 
@@ -104,7 +33,8 @@
     <p>You play as <span class="purple">X</span> and the computer plays as <span class="black">O</span><br/>
         Start by selecting a square to play</p>
 
-    <p class="scoreset">X | O</p>
+        <p id="score-display" class="scoreset">[ You: 0 / Computer: 0 ]</p>
+
 </div>
 
 <div class="tic-tac-toe">
@@ -119,9 +49,6 @@
     <div id="square9" class="tile free"></div>
 </div>
 
-<div>
-    <button >Reset</button>
-</div>
 <script>
 
     if ('serviceWorker' in navigator) {

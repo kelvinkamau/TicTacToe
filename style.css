@@ -12,6 +12,77 @@ body{
     animation: 10s linear 0s normal none infinite animate;
     }
 
+    html {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 2em auto;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    h1 {
+        margin: 7em 1em auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: pink;
+        font-weight: 700;
+    }
+
+    span.purple {
+        color: purple;
+        font-weight: 700;
+    }
+
+    span.black {
+        color: black;
+        font-weight: 700;
+    }
+
+    .tic-tac-toe {
+        width: 315px;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    .tile {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        cursor: pointer;
+
+        position: relative;
+        vertical-align: top;
+
+        padding: 15px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+
+        color: #fff;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .free {
+        background-color: #fff;
+    }
+
+    .O-play {
+        background-color: black;
+    }
+
+    .X-play {
+        background-color: purple;
+    }
+
     @-webkit-keyframes animate {
     from {background-position:0 0;}
     to {background-position: 500px 0;}

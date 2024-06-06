@@ -140,7 +140,7 @@ $(document).ready(function () {
                 Oplay();
             }
         } else {
-            alert("That square has already been played. Please choose another square");
+            alert("Square has already been played. Please select another square");
         }
     });
 

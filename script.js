@@ -1,22 +1,21 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
+    const sq1 = document.getElementById('square1');
+    const sq2 = document.getElementById('square2');
+    const sq3 = document.getElementById('square3');
+    const sq4 = document.getElementById('square4');
+    const sq5 = document.getElementById('square5');
+    const sq6 = document.getElementById('square6');
+    const sq7 = document.getElementById('square7');
+    const sq8 = document.getElementById('square8');
+    const sq9 = document.getElementById('square9');
 
-    var sq1 = $('#square1');
-    var sq2 = $('#square2');
-    var sq3 = $('#square3');
-    var sq4 = $('#square4');
-    var sq5 = $('#square5');
-    var sq6 = $('#square6');
-    var sq7 = $('#square7');
-    var sq8 = $('#square8');
-    var sq9 = $('#square9');
-
-    var scorex = 0;
-    var scoreo = 0;
-    var playValid = false;
-    var win = false;
+    let scorex = 0;
+    let scoreo = 0;
+    let playValid = false;
+    let win = false;
 
     function validatePlay(squareplayed) {
-        if ($(squareplayed).hasClass('free')) {
+        if (squareplayed.classList.contains('free')) {
             playValid = true;
         } else {
             playValid = false;
@@ -24,31 +23,35 @@ $(document).ready(function () {
     }
 
     function clearBoard() {
-        $('.tile').removeClass('played O-play X-play');
-        $('.tile').html('');
-        $('.tile').addClass('free');
+        const tiles = document.querySelectorAll('.tile');
+        tiles.forEach(tile => {
+            tile.classList.remove('played', 'O-play', 'X-play');
+            tile.textContent = '';
+            tile.classList.add('free');
+        });
         win = false;
     }
 
     function updateScoreDisplay() {
-        $('#score-display').text("[ You: " + scorex + " / Computer: " + scoreo + " ]");
+        const scoreDisplay = document.getElementById('score-display');
+        scoreDisplay.textContent = `[ You: ${scorex} / Computer: ${scoreo} ]`;
     }
 
     function winAlert(player) {
         win = true;
-        if (player == "X") {
+        if (player === "X") {
             scorex++;
-            alert("Yay, you beat the computer! Your score is " + scorex + " Computer score is " + scoreo);
+            alert(`Yay, you beat the computer! Your score is ${scorex} Computer score is ${scoreo}`);
         } else {
             scoreo++;
-            alert("You lost! Computer score is " + scoreo + " Your score is " + scorex);
+            alert(`You lost! Computer score is ${scoreo} Your score is ${scorex}`);
         }
         updateScoreDisplay();
         clearBoard();
     }
 
     function checkWin() {
-        var winConditions = [
+        const winConditions = [
             [sq1, sq2, sq3],
             [sq4, sq5, sq6],
             [sq7, sq8, sq9],
@@ -59,11 +62,19 @@ $(document).ready(function () {
             [sq3, sq5, sq7]
         ];
 
-        for (var i = 0; i < winConditions.length; i++) {
-            if (winConditions[i][0].hasClass('X-play') && winConditions[i][1].hasClass('X-play') && winConditions[i][2].hasClass('X-play')) {
+        for (let i = 0; i < winConditions.length; i++) {
+            if (
+                winConditions[i][0].classList.contains('X-play') &&
+                winConditions[i][1].classList.contains('X-play') &&
+                winConditions[i][2].classList.contains('X-play')
+            ) {
                 winAlert("X");
                 return true;
-            } else if (winConditions[i][0].hasClass('O-play') && winConditions[i][1].hasClass('O-play') && winConditions[i][2].hasClass('O-play')) {
+            } else if (
+                winConditions[i][0].classList.contains('O-play') &&
+                winConditions[i][1].classList.contains('O-play') &&
+                winConditions[i][2].classList.contains('O-play')
+            ) {
                 winAlert("O");
                 return true;
             }
@@ -72,7 +83,8 @@ $(document).ready(function () {
     }
 
     function checkDraw() {
-        if (!$('.tile').hasClass('free') && !win) {
+        const freeSquares = document.querySelectorAll('.tile.free');
+        if (freeSquares.length === 0 && !win) {
             alert("Draw! Try playing again!");
             clearBoard();
             return true;
@@ -84,7 +96,9 @@ $(document).ready(function () {
         function Oplaying(square) {
             validatePlay(square);
             if (playValid) {
-                square.removeClass('free').addClass('played O-play').html("O");
+                square.classList.remove('free');
+                square.classList.add('played', 'O-play');
+                square.textContent = "O";
                 if (checkWin()) return;
                 if (checkDraw()) return;
                 return true;
@@ -93,9 +107,9 @@ $(document).ready(function () {
         }
 
         function Orandomplay() {
-            for (var i = 0; i < 10; i++) {
-                var randomNumber = Math.floor((Math.random() * 9) + 1);
-                var randomSquare = $('#square' + randomNumber);
+            for (let i = 0; i < 10; i++) {
+                const randomNumber = Math.floor(Math.random() * 9) + 1;
+                const randomSquare = document.getElementById(`square${randomNumber}`);
                 if (Oplaying(randomSquare)) {
                     return true;
                 }
@@ -103,7 +117,7 @@ $(document).ready(function () {
             return false;
         }
 
-        var winConditions = [
+        const winConditions = [
             [[sq1, sq2, sq3], sq3, sq2, sq1],
             [[sq4, sq5, sq6], sq6, sq5, sq4],
             [[sq7, sq8, sq9], sq9, sq8, sq7],
@@ -114,15 +128,33 @@ $(document).ready(function () {
             [[sq3, sq5, sq7], sq7, sq5, sq3]
         ];
 
-        for (var i = 0; i < winConditions.length; i++) {
-            if ((winConditions[i][0][0].hasClass('X-play') && winConditions[i][0][1].hasClass('X-play') && !winConditions[i][1].hasClass('played')) ||
-                (winConditions[i][0][0].hasClass('O-play') && winConditions[i][0][1].hasClass('O-play') && !winConditions[i][1].hasClass('played'))) {
+        for (let i = 0; i < winConditions.length; i++) {
+            if (
+                (winConditions[i][0][0].classList.contains('X-play') &&
+                    winConditions[i][0][1].classList.contains('X-play') &&
+                    !winConditions[i][1].classList.contains('played')) ||
+                (winConditions[i][0][0].classList.contains('O-play') &&
+                    winConditions[i][0][1].classList.contains('O-play') &&
+                    !winConditions[i][1].classList.contains('played'))
+            ) {
                 if (Oplaying(winConditions[i][1])) return;
-            } else if ((winConditions[i][0][0].hasClass('X-play') && winConditions[i][0][2].hasClass('X-play') && !winConditions[i][2].hasClass('played')) ||
-                (winConditions[i][0][0].hasClass('O-play') && winConditions[i][0][2].hasClass('O-play') && !winConditions[i][2].hasClass('played'))) {
+            } else if (
+                (winConditions[i][0][0].classList.contains('X-play') &&
+                    winConditions[i][0][2].classList.contains('X-play') &&
+                    !winConditions[i][2].classList.contains('played')) ||
+                (winConditions[i][0][0].classList.contains('O-play') &&
+                    winConditions[i][0][2].classList.contains('O-play') &&
+                    !winConditions[i][2].classList.contains('played'))
+            ) {
                 if (Oplaying(winConditions[i][2])) return;
-            } else if ((winConditions[i][0][1].hasClass('X-play') && winConditions[i][0][2].hasClass('X-play') && !winConditions[i][3].hasClass('played')) ||
-                (winConditions[i][0][1].hasClass('O-play') && winConditions[i][0][2].hasClass('O-play') && !winConditions[i][3].hasClass('played'))) {
+            } else if (
+                (winConditions[i][0][1].classList.contains('X-play') &&
+                    winConditions[i][0][2].classList.contains('X-play') &&
+                    !winConditions[i][3].classList.contains('played')) ||
+                (winConditions[i][0][1].classList.contains('O-play') &&
+                    winConditions[i][0][2].classList.contains('O-play') &&
+                    !winConditions[i][3].classList.contains('played'))
+            ) {
                 if (Oplaying(winConditions[i][3])) return;
             }
         }
@@ -132,23 +164,27 @@ $(document).ready(function () {
         checkDraw();
     }
 
-    $('.tile').on('click', function () {
-        validatePlay(this);
-        if (playValid) {
-            $(this).removeClass('free').addClass('played X-play').html("X");
-            if (!checkWin() && !checkDraw()) {
-                Oplay();
+    const tiles = document.querySelectorAll('.tile');
+    tiles.forEach(tile => {
+        tile.addEventListener('click', function () {
+            validatePlay(this);
+            if (playValid) {
+                this.classList.remove('free');
+                this.classList.add('played', 'X-play');
+                this.textContent = "X";
+                if (!checkWin() && !checkDraw()) {
+                    Oplay();
+                }
+            } else {
+                alert("Square has already been played. Please select another square");
             }
-        } else {
-            alert("Square has already been played. Please select another square");
-        }
+        });
     });
 
-    $('#reset-button').on('click', function () {
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', function () {
         clearBoard();
     });
 
-    // Initial display of scores
     updateScoreDisplay();
-
 });
